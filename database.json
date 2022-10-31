@@ -1,90 +1,12 @@
 [
     {
-        "InvestorEmail": "ahmed@hotmail.com",
-        "InvestorName": "ahmed",
-        "InvestorPhone": "0503733067"
+        "email": "ahmed@gmail.com",
+        "name": "ahmed",
+        "phone": "0503733067"
     },
     {
-        "InvestorEmail": "lotfi@hotmail.com",
-        "InvestorName": "lotfi",
-        "InvestorPhone": "0503733067"
-    },
-    {
-        " InvestorName": "ali",
-        "InvestorEmail": "ahmedlarbi@gmail.com",
-        "InvestorName": "ahmed",
-        "InvestorPhone": "0503733067"
-    },
-    {
-        " InvestorName": "khalid",
-        "InvestorEmail": "ahmedlarbi@gmail.com",
-        "InvestorName": "ahmed",
-        "InvestorPhone": "0503733067"
-    },
-    {
-        " InvestorName": "khalid",
-        "InvestorEmail": "ahmedlarbi@gmail.com",
-        "InvestorName": "ahmed",
-        "InvestorPhone": "0503733067"
-    },
-    {
-        " InvestorName": "khalid",
-        "InvestorEmail": "ahmedlarbi@gmail.com",
-        "InvestorName": "ahmed",
-        "InvestorPhone": "0503733067"
-    },
-    {
-        " InvestorName": "khalid",
-        "InvestorEmail": "ahmedlarbi@gmail.com",
-        "InvestorName": "ahmed",
-        "InvestorPhone": "0503733067"
-    },
-    {
-        " InvestorName": "khalid",
-        "InvestorEmail": "ahmedlarbi@gmail.com",
-        "InvestorName": "ahmed",
-        "InvestorPhone": "0503733067"
-    },
-    {
-        " InvestorName": "khalid",
-        "InvestorEmail": "ahmedlarbi@gmail.com",
-        "InvestorName": "ahmed",
-        "InvestorPhone": "0503733067"
-    },
-    {
-        " InvestorName": "khalid",
-        "InvestorEmail": "ahmedlarbi@gmail.com",
-        "InvestorName": "ahmed",
-        "InvestorPhone": "0503733067"
-    },
-    {
-        "InvestorEmail": "ahmedlarbi@gmail.com",
-        "InvestorName": "ahmed",
-        "InvestorPhone": "0503733067"
-    },
-    {
-        "InvestorEmail": "ahmedlarbi@gmail.com",
-        "InvestorName": "ahmed",
-        "InvestorPhone": "0503733067"
-    },
-    {
-        "InvestorEmail": "ahmedlarbi@gmail.com",
-        "InvestorName": "ahmed",
-        "InvestorPhone": "0503733067"
-    },
-    {
-        "InvestorEmail": "ahmedlarbi@gmail.com",
-        "InvestorName": "ahmed",
-        "InvestorPhone": "0503733067"
-    },
-    {
-        "InvestorEmail": "ahmedlarbi@gmail.com",
-        "InvestorName": "ahmed",
-        "InvestorPhone": "0503733067"
-    },
-    {
-        "InvestorEmail": "ahmedlarbi@gmail.com",
-        "InvestorName": "ahmed",
-        "InvestorPhone": "0503733067"
+        "email": "ahmedlarbi@gmail.com",
+        "name": "ali",
+        "phone": "0503733067"
     }
 ]

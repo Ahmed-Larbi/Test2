@@ -4,15 +4,7 @@ import json
 from flask import Flask, jsonify, make_response, url_for, json
 import jwt
 import secrets
-
-
-
-class Investor:
-
-    def __init__(self, InvestorName, InvestorEmail, InvestorPhone):
-        self.InvestorName = InvestorName
-        self.InvestorEmail = InvestorEmail
-        self.InvestorPhone = InvestorPhone
+from Investor import Investor
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'zHBPmzZvQmaptH_x'
@@ -56,7 +48,7 @@ def delete(email):
         database = json.load(f)
     if(database):
         for idx, obj in enumerate(database):
-            if obj['InvestorEmail'] == email:
+            if obj['email'] == email:
                 database.pop(idx)
                 response = jsonify({'Deleted': email}, statuscode)
             else:
@@ -94,7 +86,7 @@ def modify(email, field,info):
     with open ('database.json', "r") as f:
         database = json.load(f)
     for records in database:
-        if records['InvestorEmail'] == email:
+        if records['email'] == email:
             records[field] = info
             break
     databaseName = 'database.json'
