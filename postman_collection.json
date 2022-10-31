@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "2a174b7f-8cab-49c5-9044-0ca0baed8267",
+		"name": "InvestorMicroservice",
+		"description": "# Introduction\nmicroservices in charge of managing the information of some investors\n\n# Overview\nthe service was developer using a json file as a database\n\n# Authentication\nJWT \n\n# Error Codes\nReaching the wrong api end point wont reroute or show an error\n\n# Rate limit\nNo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24166999"
+	},
+	"item": [
+		{
+			"name": "/show/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "/show/",
+					"path": [
+						"show",
+						""
+					]
+				},
+				"description": "Retrieve all investors in the JSON database"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/show/",
+							"path": [
+								"show",
+								""
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "/create/name/email/phoneNumber",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "/create/name/email/phoneNumber",
+					"path": [
+						"create",
+						"name",
+						"email",
+						"phoneNumber"
+					]
+				},
+				"description": "Create a new Investor with required values of name, email and phone Number"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "/create/name/email/phoneNumber",
+							"path": [
+								"create",
+								"name",
+								"email",
+								"phoneNumber"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "/delete/email",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "/delete/email",
+					"path": [
+						"delete",
+						"email"
+					]
+				},
+				"description": "Delete an existing investor USING the unique <email>"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "/delete/email",
+							"path": [
+								"delete",
+								"email"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "/filter/field=info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "/filter/field=info",
+					"path": [
+						"filter",
+						"field=info"
+					]
+				},
+				"description": "Retrieve investors filtered by \"field\" which can be email, name or phone number"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/filter/field=info",
+							"path": [
+								"filter",
+								"field=info"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "modify/field=info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "modify/field=info",
+					"host": [
+						"modify"
+					],
+					"path": [
+						"field=info"
+					]
+				},
+				"description": "Modify an existing investor by using email (Unique ID) "
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "modify/field=info",
+							"host": [
+								"modify"
+							],
+							"path": [
+								"field=info"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	]
+}

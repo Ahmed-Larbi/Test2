@@ -28,6 +28,16 @@ app.config['SECRET_KEY'] = 'zHBPmzZvQmaptH_x'
 def Index(): 
     return jsonify( {'Message': 'Wrong Route'})
 
+
+@app.route('/show/' , methods=['GET'])
+# @check_for_token
+def showInvestors():
+    
+    with open ('database.json', "r") as f:
+        database = json.load(f)
+    
+    return database
+
 # @check_for_token
 @app.route('/create/<name>/<email>/<phonenumber>', methods = ['POST'])
 def create(name, email, phonenumber):
@@ -60,23 +70,15 @@ def delete(email):
         f.write(json.dumps(database, indent=4))
     return make_response(response, 400)
 
-@app.route('/show/' , methods=['GET'])
+
+
+@app.route('/filter/<field>=<info>' , methods=['GET'])
 # @check_for_token
-def showInvestors():
+def filter(field,info):
     
     with open ('database.json', "r") as f:
         database = json.load(f)
-    
-    return database
-
-
-@app.route('/filter/<field>=<name>' , methods=['GET'])
-# @check_for_token
-def filter(field,name):
-    
-    with open ('database.json', "r") as f:
-        database = json.load(f)
-    newList = filterInvestor(name, database, field)
+    newList = filterInvestor(info, database, field)
     return newList
 
 # @check_for_token
