@@ -8,7 +8,7 @@
 	},
 	"item": [
 		{
-			"name": "/show/",
+			"name": "127.0.0.1:5000/show/",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -46,11 +46,63 @@
 					"header": null,
 					"cookie": [],
 					"body": ""
+				},
+				{
+					"name": "127.0.0.1:5000/show/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/show/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"show",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.6"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Nov 2022 05:43:44 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "133"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"email\": \"ahmed@gmail.com\",\n        \"name\": \"ahmed\",\n        \"phone\": \"0503733067\"\n    },\n    {\n        \"email\": \"ahmedlarbi@gmail.com\",\n        \"name\": \"ali\",\n        \"phone\": \"0503733067\"\n    }\n]"
 				}
 			]
 		},
 		{
-			"name": "/create/name/email/phoneNumber",
+			"name": "127.0.0.1:5000/create/ahmed/ahmed@gmail.com/0503733067",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -59,12 +111,19 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "/create/name/email/phoneNumber",
+					"raw": "127.0.0.1:5000/create/ahmed/ahmed@gmail.com/0503733067",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
 					"path": [
 						"create",
-						"name",
-						"email",
-						"phoneNumber"
+						"ahmed",
+						"ahmed@gmail.com",
+						"0503733067"
 					]
 				},
 				"description": "Create a new Investor with required values of name, email and phone Number"
@@ -93,11 +152,65 @@
 					"header": null,
 					"cookie": [],
 					"body": ""
+				},
+				{
+					"name": "127.0.0.1:5000/create/ahmed/ahmed@gmail.com/0503733067",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/create/ahmed/ahmed@gmail.com/0503733067",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"create",
+								"ahmed",
+								"ahmed@gmail.com",
+								"0503733067"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.6"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Nov 2022 05:44:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "35"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Entry has been Added\"\n}"
 				}
 			]
 		},
 		{
-			"name": "/delete/email",
+			"name": "127.0.0.1:5000/delete/ahmed@gmail.com",
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -136,11 +249,63 @@
 					"header": null,
 					"cookie": [],
 					"body": ""
+				},
+				{
+					"name": "127.0.0.1:5000/delete/ahmed@gmail.com",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/delete/ahmed@gmail.com",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"delete",
+								"ahmed@gmail.com"
+							]
+						}
+					},
+					"status": "BAD REQUEST",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.6"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Nov 2022 05:45:30 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "36"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Deleted\": \"ahmed@gmail.com\"\n    },\n    200\n]"
 				}
 			]
 		},
 		{
-			"name": "/filter/field=info",
+			"name": "127.0.0.1:5000/filter/name=ali",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -152,10 +317,17 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "/filter/field=info",
+					"raw": "127.0.0.1:5000/filter/name=ali",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
 					"path": [
 						"filter",
-						"field=info"
+						"name=ali"
 					]
 				},
 				"description": "Retrieve investors filtered by \"field\" which can be email, name or phone number"
@@ -178,11 +350,63 @@
 					"header": null,
 					"cookie": [],
 					"body": ""
+				},
+				{
+					"name": "127.0.0.1:5000/filter/name=ali",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/filter/name=ali",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"filter",
+								"name=ali"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.6"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Nov 2022 05:46:27 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "69"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"email\": \"ahmedlarbi@gmail.com\",\n        \"name\": \"ali\",\n        \"phone\": \"0503733067\"\n    }\n]"
 				}
 			]
 		},
 		{
-			"name": "modify/field=info",
+			"name": "127.0.0.1:5000/modify/email=ahmed@gmail.com,name=ahmed",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -225,6 +449,111 @@
 					"header": null,
 					"cookie": [],
 					"body": ""
+				},
+				{
+					"name": "/modify/email=<email>,<field>=<info>",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/modify/email=ahmedlarbi@gmail.com,name=ali",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"modify",
+								"email=ahmedlarbi@gmail.com,name=ali"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.6"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 31 Oct 2022 15:16:03 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "Modified $ahmedlarbi@gmail.com"
+				},
+				{
+					"name": "127.0.0.1:5000/modify/email=ahmed@gmail.com,name=ahmed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/modify/email=ahmed@gmail.com,name=ahmed",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"modify",
+								"email=ahmed@gmail.com,name=ahmed"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.6"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Nov 2022 05:47:19 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "Modified $ahmed@gmail.com"
 				}
 			]
 		}
